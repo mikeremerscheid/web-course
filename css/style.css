@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight:300;
+  margin-top:100px;
+  text-shadow:1px 1px 2px rgba(0,0,0,.3);
+}
+
+body h1{
+  font-weight: 300;
+  margin: 20px 30px;
+}
+
+#site-title{
+  font-family:'Press Start 2P', sans-serif;
+}
+
+#main-header {
+  border-bottom: 2px solid #000;
+  position: fixed;
+  width:100%;
+  background:rgba(255,255,255,.9);
+  top:0px;
+  left:0px;
+}
+
+/* #main-header::after{
+  content:"";
+  display:block;
+  width:10px;
+  height:40px;
+  background:#000;
+  position:absolute;
+} */
+
+#top-stories {
+  width: 1000px;
+  margin:auto;
+  margin-top: 20px;
+}
+
+article{
+  max-width: 310px;
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 0px;
+  box-shadow:2px 2px 6px rgba(0,0,0,.3);
+  transition: all 500ms, background 3s;
+  transition-delay:1s;
+}
+
+article:hover{
+  box-shadow:5px 5px 20px rgba(0,0,0,.7);
+  background: #aaa;
+}
+
+article img{
+  max-width: 100%;
+  height: 100px;
+
+}
+
+.article-image{
+  height: 200px;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+a{
+  /* text-decoration: underline line-through overline; */
+  /* text-decoration-style:dashed; */
+  text-decoration:none;
+}
+
+a:hover, a.more-link.bolded-link{
+  color:green;
+}
+
+.more-link{
+  font-style:italic;
+}
+
+.bolded-link{
+  font-weight: 900;
+}
+
+.more-link.bolded-link{
+  color:red;  
+}
+
+.my-input, .my-textarea{
+  display:block;
+  width:90%;
+  margin:10px;
+  padding:10px 20px;
+  border:1px solid black;
+  resize:none;
+}
+
+.my-input:focus{
+  background:lightblue;
+  color:blue;
+  outline:none;
+}
+
+article:active{
+  opacity: .4;
+}
+
+.article-image{
+  height:200px;
+  width: 200px;
+  border-radius:100px;
+
+}
+
+.my-text{
+  height:600px;
+  max-height: 200px;;
+  border:2px solid black;
+  
+}
