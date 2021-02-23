@@ -1,17 +1,19 @@
-var btn = document.getElementById("go-button");
+function saySomething(phrase){
+    console.log("You said: " + phrase);
+}
 
-function buttonClicked(){
-    console.log("Button clicked.");
-    btn.removeEventListener("click", buttonClicked);
+function getPhraseLength(phrase, another){
+    var l = p1.length  + p2.length;
+if (typeof another !== "undefined"){
+    l += another.length;
+}
 
-    var customText = document.getElementsByClassName("my-input");
-    var textArea = document.
-    var results = document.getElementById("text");
-
-    console.log(customText);
-    results.innerHTML = "Hello, " + customText[0].value;
-    
+    return l;
 }
 
 
-btn.addEventListener("click",buttonClicked);
+var p1 = "This is a slightly longer sentence.";
+var p2 = "This is a shorter sentence.";
+
+var thisLength = getPhraseLength(p1,p2);
+console.log(thisLength);
